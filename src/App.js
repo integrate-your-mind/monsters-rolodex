@@ -22,7 +22,7 @@ class App extends React.Component {
 
   //Setting the 'monsters' to an array of json data 
   componentDidMount(){
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
     .then(response =>
       response.json()).
       then(users=>this.setState({monsters:users}));
